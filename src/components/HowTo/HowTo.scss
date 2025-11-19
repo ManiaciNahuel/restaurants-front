@@ -1,0 +1,46 @@
+@import '../../index.scss';
+
+.howto {
+  padding: 24px;
+
+  h2 {
+    font-size: $font-size-2xl;
+    font-weight: 900;
+    margin-bottom: 10px;
+    font-family: $font-display;
+    color: $secondary-color;
+    border-bottom: 1px dashed #999;
+    padding-bottom: 18px;
+  }
+
+  &__item {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    align-items: center;
+    margin: 26px 0;
+    border-bottom: 1px dashed #999;
+    padding-bottom: 22px;
+    gap: 9px;
+
+    p {
+      margin: 0;
+      font-size: $font-size-sm;
+      font-weight: 600;
+      color: $primary-color;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__number {
+    font-size: $font-size-4xl;
+    font-weight: 900;
+    color: $accent-color;
+    text-align: center;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+}

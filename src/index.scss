@@ -1,0 +1,49 @@
+// ===== VARIABLES DE COLORES =====
+$primary-color: #3D546B;      // Color principal de texto
+$secondary-color: #39842F;     // Verde para números y destacados
+$accent-color: #E56960;        // Naranja para subtítulos
+$background-color: #FBF0DF;    // Fondo principal
+
+// ===== VARIABLES DE FUENTES =====
+$font-primary: "CabinetGrotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+$font-display: "Neometra", sans-serif;
+
+// ===== VARIABLES DE TAMAÑOS DE FUENTE =====
+$font-size-xs: 12px;
+$font-size-sm: 14px;
+$font-size-base: 16px;
+$font-size-lg: 18px;
+$font-size-xl: 20px;
+$font-size-2xl: 24px;
+$font-size-3xl: 32px;
+$font-size-4xl: 42px;
+
+// ===== FONT FACES =====
+@font-face {
+  font-family: "CabinetGrotesk";
+  src: url("/fonts/CabinetGrotesk-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neometra";
+  src: url("/fonts/Neometra.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+
+// ===== RESET Y BASE =====
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: $background-color;
+}
+
+body {
+  font-family: $font-primary;
+  color: $primary-color;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

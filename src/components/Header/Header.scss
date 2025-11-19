@@ -1,0 +1,64 @@
+@import '../../index.scss';
+
+.header {
+  background: $background-color;
+  padding: 18px 22px;
+  border-bottom: 1px solid $primary-color;
+  padding-top: 2rem;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__logo {
+    height: 48px;
+    width: 48px;
+    flex-shrink: 0;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: $font-size-xl;
+    font-weight: 900;
+    font-family: $font-display;
+    color: $primary-color;
+    line-height: 1.2;
+  }
+
+  &__subtitle {
+    font-size: $font-size-xs;
+    margin: 2px 0 0 0;
+    color: $primary-color;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
+  &__menu {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    
+    img {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}

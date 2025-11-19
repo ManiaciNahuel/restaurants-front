@@ -1,0 +1,18 @@
+.tabs {
+  display: flex;
+  padding: 0 20px;
+
+  button {
+    flex: 1;
+    background: #ececec;
+    border: none;
+    padding: 12px 0;
+    font-weight: 700;
+    border-right: 1px solid #ccc;
+    font-size: 14px;
+  }
+
+  button:last-child {
+    border-right: none;
+  }
+}
