@@ -1,18 +1,42 @@
+@import '../../index.scss';
+
 .tabs {
   display: flex;
-  padding: 0 20px;
+  width: 100%;
+  border: 2px solid $primary-color;
+  border-radius: 8px;
+  overflow: hidden;
+  background: $background-color;
+  margin: 0 24px;
 
-  button {
+  &__item {
     flex: 1;
-    background: #ececec;
+    padding: 12px 4px;
+    text-align: center;
+    font-family: $font-display;
+    font-weight: 900;
+    font-size: $font-size-xs;
+    color: $primary-color;
     border: none;
-    padding: 12px 0;
-    font-weight: 700;
-    border-right: 1px solid #ccc;
-    font-size: 14px;
-  }
+    border-right: 2px solid $primary-color;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+    &:last-child {
+      border-right: none;
+    }
 
-  button:last-child {
-    border-right: none;
+    &.active {
+      background: $primary-color;
+      color: $background-color;
+    }
+
+    &:hover:not(.active) {
+      background: lighten($primary-color, 45%);
+    }
   }
 }
