@@ -2,23 +2,23 @@
 
 .tabs {
   display: flex;
-  width: 100%;
-  border: 2px solid $primary-color;
-  border-radius: 8px;
+  width: 92%;
+  border: 1px solid $primary-color;
+  border-radius: 4px;
   overflow: hidden;
   background: $background-color;
-  margin: 0 24px;
+  margin: 0 auto;
+  margin-top: 0.1rem;
 
   &__item {
     flex: 1;
-    padding: 12px 4px;
+    padding: 12px 1px;
     text-align: center;
-    font-family: $font-display;
-    font-weight: 900;
     font-size: $font-size-xs;
+    font-family: $font-primary;
     color: $primary-color;
     border: none;
-    border-right: 2px solid $primary-color;
+    border-right: 1px solid $primary-color;
     background: transparent;
     cursor: pointer;
     transition: all 0.2s ease;

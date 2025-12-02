@@ -1,81 +1,58 @@
 @import '../../index.scss';
 
 .categorySelector {
-  padding: 0 24px;
-  margin: 20px 0 0 0;
+  width: 92%;
+  border: 1px solid $primary-color;
+  border-radius: 4px;
+  background: $background-color;
+  margin: 1rem auto;
+
 
   &__btn {
     width: 100%;
     padding: 16px 20px;
-    background: $background-color;
-    border: 2px solid $primary-color;
-    border-radius: 8px;
+    border: none;
+    border-radius: 8px 8px 0 0;
+    background: transparent;
     font-family: $font-display;
-    font-weight: 900;
-    font-size: $font-size-sm;
+    font-weight: 300;
     color: $primary-color;
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
     transition: all 0.2s ease;
+    outline: none;
+    border-bottom: 1px dashed #999;
 
     &:hover {
       background: lighten($background-color, 2%);
     }
+
+    &:focus {
+      outline: none;
+    }
   }
 
   &__content {
-    margin-top: 12px;
-    border: 2px solid $primary-color;
     border-radius: 8px;
     background: $background-color;
     overflow: hidden;
-  }
-
-  &__tabs {
-    display: flex;
-    border-bottom: 2px solid $primary-color;
-  }
-
-  &__tab {
-    flex: 1;
-    padding: 12px 4px;
-    background: transparent;
-    border: none;
-    border-right: 2px solid $primary-color;
-    font-family: $font-display;
-    font-weight: 900;
-    font-size: $font-size-xs;
-    color: $primary-color;
-    cursor: pointer;
-    transition: all 0.2s ease;
-
-    &:last-child {
-      border-right: none;
-    }
-
-    &.active {
-      background: $primary-color;
-      color: $background-color;
-    }
   }
 
   &__categories {
     padding: 16px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 12px;
   }
 }
 
 .categoria-item {
   padding: 10px;
-  background: lighten($background-color, 3%);
-  border: 1px solid $primary-color;
   border-radius: 6px;
   text-align: center;
   font-size: $font-size-xs;
+  border-bottom: 1px dashed #999;
   color: $primary-color;
   font-weight: 600;
   cursor: pointer;

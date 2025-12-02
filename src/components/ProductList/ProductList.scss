@@ -1,0 +1,122 @@
+@import '../../index.scss';
+
+.product-list {
+  padding: 0 24px 24px;
+
+  &__category-title {
+    font-family: $font-display;
+    font-weight: 900;
+    font-size: $font-size-xl;
+    color: $accent-color;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+.product-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  background: $background-color;
+  border-bottom: 1px dashed #999;
+  font-family: $font-primary;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+
+
+  &__info {
+    flex: 1;
+    margin-right: 16px;
+  }
+
+  &__name {
+    font-weight: 900;
+    font-size: $font-size-base;
+    color: $primary-color;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    font-size: $font-size-sm;
+    color: lighten($primary-color, 15%);
+    margin: 0;
+    line-height: 1.4;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__price {
+    font-family: $font-primary;
+    font-weight: 500;
+    font-size: $font-size-base;
+    color: $secondary-color;
+    min-width: 80px;
+    margin-left: 12px;
+    text-align: right;
+  }
+
+  &__add {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: none;
+    background: $secondary-color;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    outline: none !important;
+    box-shadow: none !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-tap-highlight-color: transparent;
+
+    svg {
+      background: transparent !important;
+      outline: none !important;
+      box-shadow: none !important;
+      border: none !important;
+      fill: currentColor;
+      stroke: currentColor;
+    }
+
+    * {
+      outline: none !important;
+      box-shadow: none !important;
+      background: transparent !important;
+    }
+
+    &:hover {
+      background: darken($secondary-color, 10%);
+      transform: scale(1.1) rotate(180deg);
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
+
+    &:focus {
+      outline: none !important;
+      box-shadow: none !important;
+    }
+
+    &:focus-visible {
+      outline: none !important;
+      box-shadow: none !important;
+    }
+  }
+}

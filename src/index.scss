@@ -47,3 +47,28 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+
+/* Scrollbar general */
+::-webkit-scrollbar {
+  width: 5px; /* ancho del scrollbar */
+  height: 1px; /* en caso de scroll horizontal */
+}
+
+/* Fondo del scrollbar */
+::-webkit-scrollbar-track {
+  background: #FBF0DF; /* mismo color de fondo */
+}
+
+/* Thumb (el "botoncito" que se arrastra) */
+::-webkit-scrollbar-thumb {
+  background-color:$secondary-color; /* color del thumb */
+  border-radius: 4px;
+  border: 1px solid $secondary-color; /* pequeño borde para que se vea separado */
+}
+
+/* Hover en el thumb */
+::-webkit-scrollbar-thumb:hover {
+  background-color: $accent-color;
+}
+

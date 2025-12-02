@@ -1,7 +1,11 @@
+@import '../../index.scss';
+
+
 .home {
   width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: #f8f9fa;
+  background-color: $background-color;
 }
+

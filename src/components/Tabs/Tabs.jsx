@@ -1,17 +1,15 @@
-import { useState } from "react";
 import "./Tabs.scss";
 
-export default function Tabs() {
+export default function Tabs({ activeTab, onTabChange }) {
   const tabs = ["PROMOS", "BEBIDA", "COMIDA", "POSTRES"];
-  const [active, setActive] = useState("PROMOS");
 
   return (
     <div className="tabs">
       {tabs.map((item) => (
         <button
           key={item}
-          className={`tabs__item ${active === item ? "active" : ""}`}
-          onClick={() => setActive(item)}
+          className={`tabs__item ${activeTab === item ? "active" : ""}`}
+          onClick={() => onTabChange(item)}
         >
           {item}
         </button>
